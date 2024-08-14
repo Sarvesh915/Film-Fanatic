@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FilmFanatic
 
-## Getting Started
+**FilmFanatic** is a movie search application built with modern web technologies, including React.js, Tailwind CSS, Next.js, MongoDB, and the IMDB API. The application allows users to search for movies, view details, and manage their favorite lists, all with a sleek and responsive user interface.
 
-First, run the development server:
+
+
+## Features
+
+- Movie search functionality using IMDB API
+- Detailed movie information
+- User authentication and favorite list management
+- Responsive and intuitive UI
+- Deployed on Vercel for high performance
+
+## Technologies Used
+
+- **Frontend:**
+  - React.js
+  - Tailwind CSS
+  - Next.js
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
+- **External API:**
+  - IMDB API
+- **Deployment:**
+  - Vercel
+
+## Installation
+
+To get a local copy up and running, follow these steps:
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/sarveshsce/filmFanatic.git
+cd FilmFanatic
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Set up environment variables:**
+
+Create a `.env.local` file in the root directory and add the following environment variables:
+
+```env
+NEXT_PUBLIC_IMDB_API_KEY=your_imdb_api_key
+MONGODB_URI=your_mongodb_uri
+NEXTAUTH_URL=http://localhost:3000
+```
+
+4. **Run the application:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. **Open your browser and navigate to:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+- Register an account or log in if you already have one.
+- Use the search bar to find movies by title.
+- View detailed information about each movie.
+- Add movies to your favorites list for easy access later.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
